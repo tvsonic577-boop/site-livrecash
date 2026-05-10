@@ -34,7 +34,7 @@ export default function App() {
       icon: <LayoutDashboard className="w-6 h-6" />,
       highlight: "Visão do Lojista",
       color: "from-green-500/20 to-emerald-500/5",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800"
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800"
     },
     {
       title: "Registro de Vendas",
@@ -42,7 +42,7 @@ export default function App() {
       icon: <Smartphone className="w-6 h-6" />,
       highlight: "Visão do Vendedor",
       color: "from-blue-500/20 to-indigo-500/5",
-      image: "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&q=80&w=800"
+      image: "https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&q=80&w=800"
     },
     {
       title: "Gestão de Clientes",
@@ -58,7 +58,7 @@ export default function App() {
       icon: <TrendingUp className="w-6 h-6" />,
       highlight: "Visão Financeira",
       color: "from-emerald-500/20 to-teal-500/5",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
+      image: "https://images.unsplash.com/photo-1556742111-a1202868ff1a?auto=format&fit=crop&q=80&w=800"
     }
   ];
 
@@ -131,13 +131,13 @@ export default function App() {
               transition={{ delay: 0.2, duration: 0.8 }}
               className="relative max-w-4xl mx-auto"
             >
-              <div className="aspect-video rounded-2xl bg-zinc-900 border border-zinc-800 overflow-hidden shadow-2xl group">
+              <div className="aspect-video rounded-2xl bg-zinc-900 border border-zinc-800 overflow-hidden shadow-2xl group relative min-h-[300px] flex items-center justify-center">
                 <img 
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200" 
-                  alt="Livre Cash Dashboard"
+                  src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&q=80&w=1200" 
+                  alt="Livre Cash Retail Interaction"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/20 to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/40 to-transparent pointer-events-none" />
               </div>
               
               <div className="mt-8">
@@ -180,7 +180,7 @@ export default function App() {
               <div className="grid grid-cols-2 gap-4 relative">
                 <div className="col-span-2 aspect-[16/10] rounded-2xl overflow-hidden border border-zinc-700/50 mb-4 shadow-2xl">
                   <img 
-                    src="https://images.unsplash.com/photo-1556740734-7bb5776364c7?auto=format&fit=crop&q=80&w=1200" 
+                    src="https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&q=80&w=1200" 
                     alt="Happy sales interaction"
                     className="w-full h-full object-cover"
                   />
