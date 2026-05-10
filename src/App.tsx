@@ -131,28 +131,13 @@ export default function App() {
               transition={{ delay: 0.2, duration: 0.8 }}
               className="relative max-w-4xl mx-auto"
             >
-              <div className="aspect-video rounded-2xl bg-zinc-900 border border-zinc-800 overflow-hidden shadow-2xl group flex items-center justify-center">
-                <div className="absolute inset-0 bg-zinc-950/40 z-10 pointer-events-none" />
-                
-                {/* Video Placeholder */}
-                <video 
+              <div className="aspect-video rounded-2xl bg-zinc-900 border border-zinc-800 overflow-hidden shadow-2xl group">
+                <img 
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200" 
+                  alt="Livre Cash Dashboard"
                   className="w-full h-full object-cover"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  poster="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=1200"
-                >
-                  {/* <source src="" type="video/mp4" /> */}
-                  Seu navegador não suporta vídeos.
-                </video>
-
-                <div className="absolute z-20 flex flex-col items-center gap-4">
-                  <div className="w-20 h-20 rounded-full bg-green-500/90 flex items-center justify-center shadow-lg transform transition-transform group-hover:scale-110 cursor-pointer">
-                    <div className="w-0 h-0 border-t-[10px] border-t-transparent border-l-[18px] border-l-zinc-950 border-b-[10px] border-b-transparent ml-1" />
-                  </div>
-                  <span className="text-sm font-bold uppercase tracking-[0.2em] text-white">Vídeo Explicativo</span>
-                </div>
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/20 to-transparent pointer-events-none" />
               </div>
               
               <div className="mt-8">
@@ -192,7 +177,18 @@ export default function App() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4 relative">
+                <div className="col-span-2 aspect-[16/10] rounded-2xl overflow-hidden border border-zinc-700/50 mb-4 shadow-2xl">
+                  <img 
+                    src="https://images.unsplash.com/photo-1556740734-7bb5776364c7?auto=format&fit=crop&q=80&w=1200" 
+                    alt="Happy sales interaction"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/60 to-transparent" />
+                  <div className="absolute bottom-6 left-6 flex items-center gap-2">
+                    <div className="px-3 py-1 bg-green-500 text-zinc-950 font-bold text-xs uppercase rounded-full">Resultado Real</div>
+                  </div>
+                </div>
                 <div className="p-6 rounded-2xl bg-zinc-800/50 border border-zinc-700/50 space-y-4">
                   <div className="w-10 h-10 rounded-lg bg-red-500/10 flex items-center justify-center border border-red-500/20">
                     <TrendingUp className="w-5 h-5 text-red-500 rotate-180" />
@@ -271,6 +267,78 @@ export default function App() {
           </div>
         </section>
 
+        {/* New: Success Gallery */}
+        <section className="py-24 bg-zinc-950 overflow-hidden">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">Onde o Sucesso Acontece</h2>
+              <p className="text-zinc-400 text-lg">Milhares de lojistas transformando vendas em sorrisos todos os dias.</p>
+            </div>
+            
+            <div className="columns-2 md:columns-3 gap-4 space-y-4">
+              <div className="relative group overflow-hidden rounded-2xl border border-zinc-800">
+                <img src="https://images.unsplash.com/photo-1554774853-aae0a22c8aa4?auto=format&fit=crop&q=80&w=600" className="w-full object-cover grayscale hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-110" alt="Smiling business owner" />
+                <div className="absolute inset-0 bg-green-500/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="relative group overflow-hidden rounded-2xl border border-zinc-800">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=600" className="w-full object-cover grayscale hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-110" alt="Happy customer with phone" />
+                <div className="absolute inset-0 bg-green-500/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="relative group overflow-hidden rounded-2xl border border-zinc-800">
+                <img src="https://images.unsplash.com/photo-1607083206968-13611e3d76db?auto=format&fit=crop&q=80&w=600" className="w-full object-cover grayscale hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-110" alt="Joyful shopping experience" />
+                <div className="absolute inset-0 bg-green-500/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="relative group overflow-hidden rounded-2xl border border-zinc-800">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=600" className="w-full object-cover grayscale hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-110" alt="Team meeting" />
+                <div className="absolute inset-0 bg-green-500/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="relative group overflow-hidden rounded-2xl border border-zinc-800">
+                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=600" className="w-full object-cover grayscale hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-110" alt="Successful sale" />
+                <div className="absolute inset-0 bg-green-500/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </div>
+              <div className="relative group overflow-hidden rounded-2xl border border-zinc-800">
+                <img src="https://images.unsplash.com/photo-1521791136364-798a7bc0d267?auto=format&fit=crop&q=80&w=600" className="w-full object-cover grayscale hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-110" alt="Customer satisfaction" />
+                <div className="absolute inset-0 bg-green-500/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section: Emotional Connection */}
+        <section className="py-24 relative overflow-hidden">
+          <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div className="relative aspect-square rounded-[3rem] overflow-hidden border border-zinc-800 shadow-2xl">
+              <img 
+                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=1000" 
+                className="w-full h-full object-cover" 
+                alt="Happy customer and retailer"
+              />
+              <div className="absolute inset-0 bg-gradient-to-tr from-green-500/20 to-transparent" />
+            </div>
+            
+            <div className="space-y-8">
+              <h2 className="text-4xl md:text-5xl font-display font-bold leading-tight">
+                Mais que uma venda, <br />
+                <span className="text-green-500">um motivo para sorrir.</span>
+              </h2>
+              <p className="text-xl text-zinc-400 leading-relaxed">
+                Quando o seu cliente ganha cashback, ele não recebe apenas um crédito. 
+                Ele recebe a promessa de que é bem-vindo de volta. É o fim do balde furado e o início de uma comunidade fiel.
+              </p>
+              
+              <div className="flex items-center gap-6 p-6 rounded-2xl bg-zinc-900 border border-zinc-800">
+                <div className="w-16 h-16 rounded-full overflow-hidden shrink-0 border-2 border-green-500">
+                  <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=200" alt="Lojista" />
+                </div>
+                <div>
+                  <p className="text-zinc-100 font-bold">"O Livre Cash mudou o clima da minha loja. Os clientes saem felizes sabendo que já têm um motivo para voltar amanhã."</p>
+                  <p className="text-zinc-500 text-sm mt-1">— Maria Silva, Proprietária de Boutique</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Section 4: Mascot */}
         <section className="py-24 relative bg-zinc-900/20">
           <div className="max-w-7xl mx-auto px-6">
@@ -291,18 +359,23 @@ export default function App() {
               </div>
 
               <div className="flex-1">
-                <span className="inline-block px-4 py-1 rounded-full bg-green-500/10 text-green-500 text-xs font-bold uppercase tracking-widest mb-4 border border-green-500/20">
-                  Nosso Mascote
+                <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-500/10 text-green-400 text-xs font-bold uppercase tracking-[0.2em] mb-4 border border-green-500/20 shadow-[0_0_15px_rgba(34,197,94,0.1)] relative overflow-hidden group">
+                  <span className="relative z-10">Seja um embaixador</span>
+                  <span className="absolute inset-0 bg-green-500/10 animate-pulse" />
                 </span>
-                <h2 className="text-4xl font-display font-bold mb-6">Expert Tech ao seu lado.</h2>
+                <h2 className="text-4xl font-display font-bold mb-6">Traga o Livre Cash para sua cidade.</h2>
                 <p className="text-zinc-400 text-lg leading-relaxed mb-6">
-                  Nossa equipe de consultores digitais está pronta para guiar sua transição para o novo varejo. 
-                  Tecnologia amigável, humana e focada no seu crescimento.
+                  Seja o rosto da revolução na sua região. Ajude lojistas a prosperarem e cresça junto com o ecossistema Livre Cash. 
+                  Tecnologia e suporte ao seu lado em cada passo.
                 </p>
-                <div className="flex items-center gap-4 text-zinc-300 font-medium italic">
-                  <div className="w-12 h-0.5 bg-green-500" />
-                  "Fidelizar é criar uma ponte ininterrupta com quem ama sua marca."
-                </div>
+                <a 
+                  href="https://wa.me/5562996346075?text=quero%20ser%20um%20embaixador%20livre%20cash"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-green-500 hover:bg-green-600 text-zinc-950 font-bold transition-all transform hover:translate-x-1"
+                >
+                  Saiba Mais <ArrowRight className="w-5 h-5" />
+                </a>
               </div>
             </div>
           </div>
